@@ -24,7 +24,7 @@
 
   const client = axios.create({
   // 環境変数に変更
-  baseURL: 'https://api.github.com/repos/NathaliaGonzalez/Tarea_refactorizacion_py', 
+  baseURL: `${process.env.VUE_APP_GITHUB_ENDPOINT}`, 
   headers: {
     'Accept': 'application/vnd.github.v3+json',
     'Content-Type':'application/json',
